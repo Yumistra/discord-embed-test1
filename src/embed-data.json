@@ -5,7 +5,7 @@
     "components": [
       {
         "type": 10,
-        "content": "# Liberate\nDiscord component-embed 테스트 페이지입니다."
+        "content": "# Discord component-embed... is good."
       },
       {
         "type": 14,
@@ -17,8 +17,8 @@
           {
             "type": 2,
             "style": 5,
-            "url": "https://github.com/Yumistra/Liberate",
-            "label": "GitHub 저장소 보기"
+            "url": "https://github.com/Yumistra",
+            "label": "GitHub"
           }
         ]
       }
