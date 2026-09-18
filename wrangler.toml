@@ -1,0 +1,10 @@
+name = "liberate-embed"
+main = "src/index.js"
+compatibility_date = "2025-01-01"
+
+# index.html을 문자열(raw text)로 import할 수 있게 해주는 규칙입니다.
+# JSON 파일(embed-data.json)은 esbuild가 기본으로 처리하므로 별도 규칙이 필요 없습니다.
+[[rules]]
+type = "Text"
+globs = ["**/*.html"]
+fallthrough = true
