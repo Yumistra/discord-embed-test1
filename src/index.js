@@ -16,24 +16,32 @@ function notFound() {
 
 export default {
   async fetch(request) {
-    if (!isDiscordCrawler(request)) {
-      return notFound();
-    }
+    if (!isDiscordCrawler(request)) return notFound();
 
     const url = new URL(request.url);
+    const [slug, sub] = url.pathname.split("/").filter(Boolean);
 
-    if (url.pathname === "/embed-data.json") {
-      const body = JSON.stringify(embedData);
+    const embedData = EMBEDS[slug];
+    if (!embedData) return notFound(); // 존재하지 않는 슬러그도 404
 
-      if (new TextEncoder().encode(body).length > 3000) {
-        console.warn("json has exceeded Discord's 3,000-byte limit.");
-      }
-
-      return new Response(body, {
+    if (sub === "embed-data.json") {
+      return new Response(JSON.stringify(embedData), {
         status: 200,
         headers: { "content-type": "application/json; charset=utf-8" },
       });
     }
+
+    const embedJsonUrl = `${url.origin}/${slug}/embed-data.json`;
+    const html = indexHtmlTemplate
+      .replaceAll("{{PAGE_URL}}", `${url.origin}/${slug}/`)
+      .replaceAll("{{EMBED_JSON_URL}}", embedJsonUrl);
+
+    return new Response(html, {
+      status: 200,
+      headers: { "content-type": "text/html; charset=utf-8" },
+    });
+  },
+};
 
     const embedJsonUrl = `${url.origin}/embed-data.json`;
     const html = indexHtmlTemplate
