@@ -9,7 +9,7 @@
         "components": [
           {
             "type": 10,
-            "content": "## **[Percuba](https://discord.gg/PeU3wfU8H4)'s Script loader**\n"
+            "content": "## **Script loader**\n-# [Percuba](https://discord.gg/PeU3wfU8H4)'s Script loader. can change at any time. "
           }
         ],
         "accessory": {
@@ -23,7 +23,7 @@
       { "type": 14, "spacing": 2 },
       {
         "type": 10,
-        "content": "- **PC**\n-# Click \n```🟡 lndev.```"
+        "content": "- **PC**\n-# Click to copy.\n```🟡 lndev.```"
       },
       {
         "type": 10,
