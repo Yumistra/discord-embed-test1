@@ -1,0 +1,39 @@
+{
+  "component": {
+    "type": 17,
+    "accent_color": 1082606,
+    "spoiler": false,
+    "components": [
+      {
+        "type": 9,
+        "components": [
+          {
+            "type": 10,
+            "content": "## **[Percuba](https://discord.gg/PeU3wfU8H4)'s Script loader**\n"
+          }
+        ],
+        "accessory": {
+          "type": 11,
+          "media": {
+            "url": "https://raw.githubusercontent.com/Yumistra/Liberate/refs/heads/main/Discord/%EB%AC%B4%EC%A0%9C44_20260910213639.png"
+          },
+          "description": "Cuba-chan"
+        }
+      },
+      { "type": 14, "spacing": 2 },
+      {
+        "type": 10,
+        "content": "- **PC**\n-# Click \n```🟡 lndev.```"
+      },
+      {
+        "type": 10,
+        "content": "- **Mobile** \n-# Click to copy.\n`🟡 lndev.`"
+      },
+      { "type": 14, "spacing": 2 },
+      {
+        "type": 10,
+        "content": "**Supported Games:**\n[Infectious Smile](https://www.roblox.com/games/5985232436/Infectious-Smile)\n"
+      }
+    ]
+  }
+}
