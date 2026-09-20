@@ -1,2 +1,8 @@
-# wrangler.toml
-name = 'percuba'
+name = "Percuba"
+main = "src/index.js"
+compatibility_date = "2026-09-20"
+
+[[rules]]
+type = "Text"
+globs = ["**/*.html"]
+fallthrough = true
