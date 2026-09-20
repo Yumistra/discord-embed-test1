@@ -1,9 +1,7 @@
-// Discord 공식 문서(discord/discord-api-docs PR #8606, component-embeds.mdx) 기준:
-//   - 페이지 자체는 User-Agent "Mozilla/5.0 (compatible; Discordbot/2.0; +https://discordapp.com)"로 요청됨
-//   - <link>로 연결된 JSON은 User-Agent "Discordbot/2.0"으로 별도 요청됨
-// 두 경우 모두 "Discordbot" 문자열을 포함하므로 대소문자 무시 정규식 하나로 함께 처리합니다.
 import indexHtmlTemplate from "./index.html";
-import embedData from "./embed-data.json";
+import script from "./embeds/embed1.json";
+
+const EMBEDS = { script };
 
 const DISCORD_UA_RE = /discordbot/i;
 
