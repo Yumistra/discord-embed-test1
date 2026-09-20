@@ -30,18 +30,7 @@ export default {
         headers: { "content-type": "application/json; charset=utf-8" },
       });
     }
-
-    const embedJsonUrl = `${url.origin}/${slug}/embed-data.json`;
-    const html = indexHtmlTemplate
-      .replaceAll("{{PAGE_URL}}", `${url.origin}/${slug}/`)
-      .replaceAll("{{EMBED_JSON_URL}}", embedJsonUrl);
-
-    return new Response(html, {
-      status: 200,
-      headers: { "content-type": "text/html; charset=utf-8" },
-    });
-  },
-};
+    
 
     const embedJsonUrl = `${url.origin}/embed-data.json`;
     const html = indexHtmlTemplate
