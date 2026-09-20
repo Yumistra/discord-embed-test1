@@ -32,10 +32,10 @@ export default {
     }
     
 
-    const embedJsonUrl = `${url.origin}/embed-data.json`;
-    const html = indexHtmlTemplate
-      .replaceAll("{{PAGE_URL}}", `${url.origin}${url.pathname}`)
-      .replaceAll("{{EMBED_JSON_URL}}", embedJsonUrl);
+    const embedJsonUrl = `${url.origin}/${slug}/embed-data.json`;
+const html = indexHtmlTemplate
+  .replaceAll("{{PAGE_URL}}", `${url.origin}/${slug}/`)
+  .replaceAll("{{EMBED_JSON_URL}}", embedJsonUrl);
 
     return new Response(html, {
       status: 200,
