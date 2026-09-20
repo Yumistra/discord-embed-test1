@@ -5,13 +5,8 @@
     "components": [
       {
         "type": 10,
-        "content": "# Discord component-embed... is good."
-      },
-      {
-        "type": 14,
-        "spacing": 1
+        "content": "## Ohio!"
       }
-    
-        ]
-      }
+    ]
   }
+}
