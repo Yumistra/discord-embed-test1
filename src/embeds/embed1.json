@@ -9,7 +9,7 @@
         "components": [
           {
             "type": 10,
-            "content": "## **Script loader**\n-# [Percuba](https://discord.gg/PeU3wfU8H4)'s Script loader. can change at any time. "
+            "content": "## **Script loader**\n-# [Percuba](https://discord.gg/PeU3wfU8H4)'s Script loader.\n can change at any time. "
           }
         ],
         "accessory": {
@@ -32,7 +32,7 @@
       { "type": 14, "spacing": 2 },
       {
         "type": 10,
-        "content": "**Supported Games:**\n[Infectious Smile](https://www.roblox.com/games/5985232436/Infectious-Smile)\n"
+        "content": "Is Universal Script. should work for all games."
       }
     ]
   }
